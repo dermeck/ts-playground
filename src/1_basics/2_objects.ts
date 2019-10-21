@@ -28,7 +28,7 @@
   let persons: string[] = ["Bob", "Alice"];
   let persons2: Array<string> = ["Bob", "Alice"];
 
-  // tuple
+  // tuple (arrays with fixed lengths and typed values)
   type PersonTuple = [string, number];
   let person: PersonTuple = ["Bob", 12];
 }
