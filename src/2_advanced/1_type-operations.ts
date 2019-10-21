@@ -1,12 +1,12 @@
 {
-  // keyof (index type query eturns union type of property keys (string literals))
+  // keyof (index type query) creates union type of property keys (string literals))
   type Person = { name: string; age: number };
 
   type PersonKeys = keyof Person; // "name" | "age"
 }
 
 {
-  // lookup type (index access type) returns the type of a field
+  // lookup type (index access type) gets the type of a certain index/member
   type Person = {
     name: string;
     gender: "m" | "f";
@@ -20,5 +20,6 @@
 {
   // in - create type from key union
   type Moep = { [P in "key1" | "key2" | "key3"]: any };
+
   let m: Moep = { key1: "hallo", key2: "welt", key3: true };
 }
