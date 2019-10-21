@@ -46,7 +46,7 @@ const s1: unique symbol = Symbol();
 
 // never (bottom type)
 
-// literal types (number, string, boolean)
+// literal types (number, string, boolean), every constant is a type
 let lit1: "foo";
 lit1 = "foo";
 // lit1 = "bar"; // error
