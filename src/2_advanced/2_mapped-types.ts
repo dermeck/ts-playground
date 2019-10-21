@@ -6,11 +6,21 @@ type Person = {
   address?: { location: string; zipCode: number };
 };
 
-type MappedType<T> = {
-  [P in keyof T]: T[P];
+type MappedPersonAny = {
+  [P in keyof Person]: any;
 };
 
-type MappedPerson = MappedType<Person>; // same as Person
+type MappedPerson = {
+  [P in keyof Person]: Person[P]; // same as Person
+};
+
+{
+  type MappedType<T> = {
+    [P in keyof T]: T[P];
+  };
+
+  type MappedPerson2 = MappedType<Person>; // also same as Person
+}
 
 {
   {
