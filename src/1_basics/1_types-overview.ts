@@ -1,5 +1,3 @@
-// node_modules/typescript/bin/tsc --watch
-
 // type hierarchy https://www.oreilly.com/library/view/programming-typescript/9781492037644/ch03.html
 
 // any
@@ -9,7 +7,7 @@ a2 = 1;
 a2 = "1";
 a2.myMethod(); // allowed
 
-// unknown: type-safe counterpart of any
+// unknown: type-safe counterpart of any (top type)
 let b: unknown;
 b = 1;
 b = "1";
@@ -43,6 +41,8 @@ let foo: bigint = BigInt(100); // BigInt function
 let s = Symbol();
 s = Symbol("a");
 const s1: unique symbol = Symbol();
+
+// never (bottom type)
 
 // literal types (number, string, boolean)
 let lit1: "foo";
