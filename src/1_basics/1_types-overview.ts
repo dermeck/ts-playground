@@ -1,5 +1,7 @@
 // type hierarchy https://www.oreilly.com/library/view/programming-typescript/9781492037644/ch03.html
 
+// node_modules/typescript/bin/tsc --watch
+
 // any
 let a1 = null; // any
 let a2: any;
@@ -49,7 +51,7 @@ let lit1: "foo";
 lit1 = "foo";
 // lit1 = "bar"; // error
 
-// enum member types (nuber, string)
+// enum member types (number, string)
 const enum Moep {
   "a1" = "1",
   "a2" = 1

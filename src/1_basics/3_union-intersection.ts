@@ -14,7 +14,7 @@
 
   type I = A & B;
 
-  let i: I = { a1: "a", c: {} };
+  // let i: I = { a1: "a", c: {} };
 }
 
 // union
