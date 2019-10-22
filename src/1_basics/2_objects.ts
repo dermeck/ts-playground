@@ -17,10 +17,6 @@
   };
 
   let foo: Foo = { bar: 2, 1: "1" };
-
-  interface A {
-    a: string;
-  }
 }
 
 {
